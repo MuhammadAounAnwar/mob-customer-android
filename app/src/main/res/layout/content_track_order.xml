@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Button_Font">
+
+        <LinearLayout
+            android:id="@+id/RelativeLayout_Track"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/TrackOrder_Map"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="1">
+            </com.google.android.gms.maps.MapView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_OrderStatus" />
+
+        <TextView
+            android:id="@+id/textView_TO_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/edittext"
+            android:textColor="@color/Button_BG"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view9"
+            tools:text="5:20 pm" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/edittext"
+            android:text="@string/TO_EstimatedTime"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TO_Time" />
+
+        <TextView
+            android:id="@+id/textView_TO_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/edittext"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view10"
+            tools:text="123 road town,NL" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TO_Address" />
+
+        <TextView
+            android:id="@+id/textView_TO_ItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/hamurzfreeversion"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view11"
+            tools:text="bruschetta squares" />
+
+        <TextView
+            android:id="@+id/textView_TO_ItemContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/price"
+            android:text="Caramalised, Onion, Goat Cheese on a"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TO_ItemName" />
+
+        <TextView
+            android:id="@+id/textView_TO_Size"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/orange_round"
+            android:fontFamily="@font/edittext"
+            android:gravity="center"
+            android:textColor="@color/Button_Font"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TO_ItemContent"
+            tools:text="Large" />
+
+        <ListView
+            android:id="@+id/listView_TrackOrder"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:scrollbarSize="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TO_Size" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_OrderStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TO_Preparing">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout_Driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Button_Font"
+                android:visibility="visible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgprofile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView_TO_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/edittext"
+                    android:textColor="@color/Button_BG"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgprofile"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="BILAL AHMAD" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/price"
+                    android:text="@string/TO_Message"
+                    app:layout_constraintStart_toEndOf="@+id/imageView13"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_TO_Name" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgprofile"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_TO_Name"
+                    app:srcCompat="@drawable/call" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_TO_Preparing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/edittext"
+            android:text="@string/TO_OrderPreparing"
+            android:textColor="@color/Button_BG"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RelativeLayout_Track" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+

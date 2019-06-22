@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:background="@color/fontColor">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            tools:layout_editor_absoluteX="351dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/Button_BG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView_CD_Heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/pangrambold"
+                android:text="TWO TASTY DEALS FOR $14.99"
+                android:textAlignment="center"
+                android:textColor="@color/Button_Font"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_CD_Detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/myriadproregular"
+                android:text="2 MEDIUM PIZZAS, 1 PASTA, 1 Sumptous, 2 regular Drinks, 3 Fries"
+                android:textAlignment="center"
+                android:textColor="@color/Button_Font"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_CD_Heading" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/itemname"
+            android:text="@string/CD_Pizza"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view22">
+
+            <ListView
+                android:id="@+id/listview_PizzaDeal"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:nestedScrollingEnabled="true"
+                android:scrollbarSize="1dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view19"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/itemname"
+            android:text="@string/CD_Pasta"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/itemname"
+            android:text="@string/CD_Drinks"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+        <View
+            android:id="@+id/view20"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/view22"
+            app:layout_constraintStart_toEndOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/line_art" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/view23"
+            app:layout_constraintStart_toEndOf="@+id/textView90"
+            app:layout_constraintTop_toBottomOf="@+id/view19"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/line_art" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/view24"
+            app:layout_constraintStart_toEndOf="@+id/textView91"
+            app:layout_constraintTop_toBottomOf="@+id/view20"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/line_art" />
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+        <View
+            android:id="@+id/view23"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+        <View
+            android:id="@+id/view24"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view23">
+
+            <ListView
+                android:id="@+id/listview_pastaDeal"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view24">
+
+            <ListView
+                android:id="@+id/listview_drinksDeal"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+

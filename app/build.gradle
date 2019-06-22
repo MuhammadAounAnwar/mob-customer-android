@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.locatemybus.myorderbox"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        Delivery {
+            applicationId "com.locatemybus.myorderbox.delivery"
+            dimension "version"
+            applicationIdSuffix ".delivery"
+            minSdkVersion 21
+            targetSdkVersion 28
+            versionCode 1
+            versionName "1.0"
+        }
+        Delivery_Collection {
+            applicationId "com.locatemybus.myorderbox.delivery_collection"
+            dimension "version"
+            applicationIdSuffix ".delivery_collection"
+            minSdkVersion 21
+            targetSdkVersion 28
+            versionCode 1
+            versionName "1.0"
+        }
+        All {
+            applicationId "com.locatemybus.myorderbox.all"
+            dimension "version"
+            applicationIdSuffix ".all"
+            minSdkVersion 21
+            targetSdkVersion 28
+            versionCode 1
+            versionName "1.0"
+        }
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    /*for google map*/
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.1.0'
+
+    /*for circular image*/
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    /*Stripe*/
+    implementation 'com.stripe:stripe-android:8.7.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    /*Carousel*/
+    implementation 'com.synnapps:carouselview:0.1.5'
+
+    /*For Swipe Functionality*/
+    implementation 'com.hudomju:swipe-to-dismiss-undo:1.0'
+
+    /*Retrofit*/
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+
+    /*PaperDB*/
+    implementation 'io.paperdb:paperdb:2.6'
+
+    /*Event Bus*/
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    /*Glide Api For image*/
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    /*Badge*/
+    implementation 'com.nex3z:notification-badge:1.0.2'
+}

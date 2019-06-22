@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">MyOrderBox</string>
+
+    <!--Login-->
+    <string name="loginEmail">Your Email</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginButton">Sign In</string>
+    <string name="login_SignUp">SignUp</string>
+    <string name="login_CopyRights">Copyright 2019 crust. All rights reserved.</string>
+    <string name="login_ForgotPassword">Forgot Password ?</string>
+
+
+    <!--Forgot Password-->
+    <string name="forgotEmail">Your Email</string>
+    <string name="forgotButton">Send My Password</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">My Store</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--for Menu Navigation Drawer-->
+    <string name="menu_Home">Home</string>
+    <string name="menu_Login">Login</string>
+    <string name="menu_MyOrder">My Order</string>
+    <string name="menu_NotificationPreferences">Notification Preferences</string>
+    <string name="menu_Notification">Notification</string>
+    <string name="menu_Help">Help</string>
+    <string name="menu_Version">V1.07</string>
+    <string name="menu_Powered">Powered By MyOrderBox</string>
+    <string name="title_activity_notification_preferences">Notification Preferences</string>
+    <string name="title_activity_menu_page">MenuPage</string>
+
+    <!--For Track Order-->
+    <string name="TO_OrderPreparing">Order Preparing</string>
+    <string name="TO_Message">Message</string>
+    <string name="TO_EstimatedTime">Estimated Time</string>
+    <string name="TO_Heading">TRACK ORDER</string>
+
+    <!--for Order Again-->
+    <string name="OA_Delivery">Delivery</string>
+    <string name="OA_Time">Time</string>
+    <string name="OA_Date">Date</string>
+    <string name="OA_ReviewYourOrder">Review Your Order</string>
+    <string name="OA_OrderAgain">Order Again</string>
+    <string name="OA_Heading">Order Again</string>
+
+    <!--CheckOut-->
+    <string name="CO_AddVoucherCode">Add Voucher Code</string>
+    <string name="CO_VoucherApplied">Voucher Applied</string>
+    <string name="CO_NotesForTheChef">Notes For The Chef</string>
+    <string name="CO_PaymentType">Payment Type</string>
+    <string name="CO_Cash">Cash</string>
+    <string name="CO_Card">Card</string>
+    <string name="CO_ConfirmOrder">Confirm Order</string>
+    <string name="CO_Heading">CHECK OUT</string>
+
+    <!--Menu Detail Page-->
+    <string name="MDP_Heading">PIZZA</string>
+    <string name="MDP_Button">ADD</string>
+
+    <!--for CheckOut Alert Dialog-->
+    <string name="CO_Dialog_DineIn">Dine In</string>
+    <string name="CO_Dialog_Collection">Collection</string>
+    <string name="CO_Dialog_Delivery">Delivery</string>
+    <string name="CO_Dialog_CheckOut">Check Out</string>
+
+    <!--for Create Deal-->
+    <string name="CD_CreateDeal">Create Deal</string>
+    <string name="CD_Button">ADD</string>
+    <string name="CD_Pizza">SELECT PIZZA</string>
+    <string name="CD_Pasta">SELECT PASTA</string>
+    <string name="CD_Drinks">SELECT DRINK</string>
+
+    <!--for Menu Page-->
+    <string name="MP_MinOrder">Min Order</string>
+    <string name="MP_Call">Call</string>
+    <string name="MP_Delivery">Delivery</string>
+
+    <!--for Notification Preferences-->
+    <string name="NP_GetOrderUpdatesBy">Get Order Updates By</string>
+    <string name="NP_GetNewsAndOffersBy">Get News And Offers By</string>
+    <string name="NP_Email">Email</string>
+    <string name="NP_EmailBody">Order receipts are emailed to you</string>
+    <string name="NP_TextMessage">Text Message</string>
+    <string name="NP_TextMessageBody">for important updates only</string>
+    <string name="NP_AppNotifications">App Notifications</string>
+    <string name="NP_Heading">Notification Preferences</string>
+
+    <!--Home Page-->
+    <string name="HP_StoreIsClosed">Store Is Closed</string>
+    <string name="HP_StartYourOrder">Start Your Order</string>
+    <string name="HP_Delivery">Delivery</string>
+    <string name="HP_Collection">Collection</string>
+    <string name="HP_DineIn">DineIn</string>
+    <string name="HP_Order">Order</string>
+    <string name="HP_PostCode">Post Code</string>
+
+    <!--for UserRegistration-->
+    <string name="UR_Email">Email</string>
+    <string name="UR_Password">Password</string>
+    <string name="UR_FirstName">First Name</string>
+    <string name="UR_LastName">Last Name</string>
+    <string name="UR_MobileNo">Mobile No.</string>
+    <string name="UR_DriverInstructions">Driver Instructions</string>
+    <string name="UR_TermsAndConditions">I accept terms and conditions.</string>
+    <string name="UR_Button">Register</string>
+
+    <!--for Forgot Password-->
+    <string name="FP_Information">If you have forgotten your password you can reset it here.</string>
+    <string name="FP_Email">Your Email</string>
+    <string name="FP_Button">Send My Password</string>
+
+    <!--My Orders-->
+    <string name="MO_Heading">My Orders</string>
+
+    <!--Google Maps Api Key-->
+    <string name="google_maps_key">AIzaSyBO4CRQ0ntRe-JQa1ynjyC0Gchh5jSKH6Y</string>
+    <string name="title_activity_menu_page_tabular">MenuPageTabular</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!--General-->
+    <string name="Currency">£</string>
+
+</resources>

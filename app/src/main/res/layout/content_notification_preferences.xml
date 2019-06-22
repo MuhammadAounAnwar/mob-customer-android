@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.locatemybus.myorderbox.Activities.NotificationPreferences"
+    tools:showIn="@layout/activity_notification_preferences"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_GetOrderUpdatesBy"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView_NPEmail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_Email"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView_NP_Email2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_EmailBody"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_NPEmail1" />
+
+        <android.support.v7.widget.SwitchCompat
+            style="@style/SwitchCompatStyle"
+            android:id="@+id/switch_UpdateEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_NP_Email2" />
+
+
+        <TextView
+            android:id="@+id/textView_NP_TM1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_TextMessage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/textView_NPTM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_TextMessageBody"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_NP_TM1" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_UpdateMsg"
+            style="@style/SwitchCompatStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textAlignment="center"
+            android:thumbTint="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/textView_NPAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_AppNotifications"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_UpdateNotification"
+            style="@style/SwitchCompatStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textAlignment="center"
+            android:thumbTint="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/Button_Font"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_GetNewsAndOffersBy"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/textView_NPEmail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_Email"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <TextView
+            android:id="@+id/textView_NPTM3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_TextMessage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/textView_NPAN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/button"
+            android:text="@string/NP_AppNotifications"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_OfferEmail"
+            style="@style/SwitchCompatStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:textAlignment="center"
+            android:thumbTint="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_OfferMsg"
+            style="@style/SwitchCompatStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textAlignment="center"
+            android:thumbTint="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_OfferNotification"
+            style="@style/SwitchCompatStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textAlignment="center"
+            android:thumbTint="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_NPTM2" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_UpdateNotification" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_OfferEmail" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_OfferMsg" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_OfferNotification" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
+

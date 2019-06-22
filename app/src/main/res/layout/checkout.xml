@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/Button_BG"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_CO_Cross">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Button_BG"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_CO_Delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Button_Font"
+                android:fontFamily="@font/button"
+                android:text="@string/CO_Dialog_Delivery"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_CO_Collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Button_BG"
+                android:fontFamily="@font/button"
+                android:text="@string/CO_Dialog_Collection"
+                android:textColor="@color/Button_Font"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_CO_DineIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Button_BG"
+                android:fontFamily="@font/button"
+                android:text="@string/CO_Dialog_DineIn"
+                android:textColor="@color/Button_Font"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_DeliveryTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<ListView-->
+    <!--android:id="@+id/listView_CheckOut"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="400dp"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:background="@color/Button_Font"-->
+    <!--android:nestedScrollingEnabled="true"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_COPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:fontFamily="@font/button"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="$80.9"
+            android:textColor="@color/Button_Font"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_COCheckOut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Button_BG"
+            android:fontFamily="@font/itemname"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/CO_Dialog_CheckOut"
+            android:textColor="@color/Button_Font"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_CO_Cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ListView
+            android:id="@+id/listView_CheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Button_Font"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

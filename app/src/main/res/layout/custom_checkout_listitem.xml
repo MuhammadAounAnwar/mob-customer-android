@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/delete" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fontColor">
+
+        <ImageView
+            android:id="@+id/imageView_CO_Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/textView_CO_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/itemname"
+            android:text="BRUSCHETTA SQUARES"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView_CO_Image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_CO_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/price"
+            android:text="2 PIZZAS, 1 TOMATO SAUCE"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toEndOf="@+id/imageView_CO_Image"
+            app:layout_constraintTop_toBottomOf="@+id/textView_CO_heading" />
+
+        <TextView
+            android:id="@+id/textView_CO_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/orange_round"
+            android:fontFamily="@font/edittext"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="$21"
+            android:textAlignment="center"
+            android:textColor="@color/Button_Font"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_CO_Image"
+            app:layout_constraintTop_toBottomOf="@+id/textView_CO_Content" />
+
+        <ImageView
+            android:id="@+id/imageView_CO_Dec"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_CO_Price"
+            app:layout_constraintTop_toBottomOf="@+id/textView_CO_Content"
+            app:srcCompat="@drawable/minus" />
+
+        <ImageView
+            android:id="@+id/imageView_CO_Inc"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_CO_Dec"
+            app:layout_constraintTop_toBottomOf="@+id/textView_CO_Content"
+            app:srcCompat="@drawable/plus" />
+
+        <TextView
+            android:id="@+id/textView_CO_Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/itemname"
+            android:text="X2"
+            android:textColor="@color/Button_BG"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView_CO_heading"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_404">404\n Even the things we love break sometimes,thanks for your patience while we put the pieces back together. Please contact support if the issue persists</string>
+    <string name="global_network_fail">Communication with server failed, please try again.</string>
+    <string name="global_network_unknown_host">Cannot establish a connection to the server, please try again.</string>
+    <string name="global_network_not_found">Resource not found, please try again.</string>
+    <string name="global_network_timeout">Slow internet connection or Server is currently not responding, please try again.</string>
+    <string name="global_network_error">An error occurred, please try again.</string>
+    <string name="global_network_no_data">Unexpected response from server.</string>
+    <string name="progressbar_default_msg">Please wait...</string>
+    <string name="no_internet">No internet.</string>
+</resources>

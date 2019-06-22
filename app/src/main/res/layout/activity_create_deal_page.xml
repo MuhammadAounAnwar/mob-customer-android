@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locatemybus.myorderbox.Activities.CreateDealPage"
+    android:nestedScrollingEnabled="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <include
+            layout="@layout/custom_activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <include
+        layout="@layout/custom_content_create_deal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
+        app:layout_constraintVertical_bias="0.346"
+        >
+
+
+
+    </include>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_CDP_Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_BG"
+            android:fontFamily="@font/button"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="$14.99"
+            android:textAlignment="center"
+            android:textColor="@color/Button_Font"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_Deal_Add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Button_BG"
+            android:fontFamily="@font/hamurzfreeversion"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/CD_Button"
+            android:textAlignment="center"
+            android:textColor="@color/Button_Font"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:expandedTitleMarginStart="60dp">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/fontColor"
+            android:nestedScrollingEnabled="true">
+
+            <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:fillColor="@color/Button_BG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="@color/Button_Font"
+            app:strokeWidth="1dp" />
+
+            <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/other"
+            android:gravity="center"
+            android:text="@string/MP_MinOrder"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView39"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView"
+            tools:text="MIN ORDER" />
+
+                <TextView
+                    android:id="@+id/textView_MTP_Min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/other"
+                    android:gravity="center"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView39"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+            <TextView
+            android:id="@+id/textView71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/other"
+            android:gravity="center"
+            android:text="@string/MP_Call"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView40"
+            app:layout_constraintStart_toEndOf="@+id/imageView39"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+
+            <TextView
+            android:id="@+id/textView_MTP_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/other"
+            android:gravity="center"
+            android:text="01234567"
+            android:textColor="@color/Button_BG"
+            app:layout_constraintEnd_toStartOf="@+id/imageView40"
+            app:layout_constraintStart_toEndOf="@+id/imageView39"
+            app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+            <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/other"
+            android:gravity="center"
+            android:text="@string/MP_Delivery"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView40"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+
+                <TextView
+                    android:id="@+id/textView_MTP_DTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/other"
+                    android:gravity="center"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView40"
+                    app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+            <View
+            android:id="@+id/view18"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_MTP_Phone" />
+
+
+
+            <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/view18"
+            app:layout_constraintEnd_toStartOf="@+id/textView_MTP_Phone"
+            app:layout_constraintStart_toEndOf="@+id/textView69"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView"
+            app:srcCompat="@drawable/vertical_line" />
+
+            <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/view18"
+            app:layout_constraintEnd_toStartOf="@+id/textView_MTP_DTime"
+            app:layout_constraintStart_toEndOf="@+id/textView_MTP_Phone"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView"
+            app:srcCompat="@drawable/vertical_line" />
+
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+           >
+
+            <ListView
+            android:id="@+id/listView_MP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:layout_margin="15dp"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarSize="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view18" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+<!--<ScrollView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--tools:context="com.locatemybus.myorderbox.Activities.ui.main.PlaceholderFragment"-->
+    <!--android:background="@color/fontColor"-->
+    <!--android:id="@+id/constraintLayout_Count"-->
+    <!--android:fillViewport="true"-->
+    <!--android:nestedScrollingEnabled="true">-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--android:background="@color/fontColor"-->
+        <!--android:nestedScrollingEnabled="true">-->
+
+        <!--<com.synnapps.carouselview.CarouselView-->
+            <!--android:id="@+id/carouselView"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--app:fillColor="@color/Button_BG"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:pageColor="#00000000"-->
+            <!--app:radius="6dp"-->
+            <!--app:slideInterval="3000"-->
+            <!--app:strokeColor="@color/Button_Font"-->
+            <!--app:strokeWidth="1dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView69"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:fontFamily="@font/other"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/MP_MinOrder"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/imageView39"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/carouselView"-->
+            <!--tools:text="MIN ORDER" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView_MTP_Min"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/other"-->
+            <!--android:gravity="center"-->
+            <!--android:text="15.00"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/imageView39"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView69" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView71"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:fontFamily="@font/other"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/MP_Call"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/imageView40"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/imageView39"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/carouselView" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView_MTP_Phone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/other"-->
+            <!--android:gravity="center"-->
+            <!--android:text="01234567"-->
+            <!--android:textColor="@color/Button_BG"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/imageView40"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/imageView39"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView71" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView73"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:fontFamily="@font/other"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/MP_Delivery"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/imageView40"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/carouselView" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView_MTP_DTime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/other"-->
+            <!--android:gravity="center"-->
+            <!--android:text="2.59"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/imageView40"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView73" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/view18"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@color/colorBlack"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView_MTP_Phone" />-->
+
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView39"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/view18"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/textView_MTP_Phone"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/textView69"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/carouselView"-->
+            <!--app:srcCompat="@drawable/vertical_line" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView40"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/view18"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/textView_MTP_DTime"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/textView_MTP_Phone"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/carouselView"-->
+            <!--app:srcCompat="@drawable/vertical_line" />-->
+
+
+
+
+
+
+
+        <!--<ListView-->
+            <!--android:id="@+id/listView_MP"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginStart="30dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginEnd="30dp"-->
+            <!--android:nestedScrollingEnabled="true"-->
+            <!--android:scrollbarSize="0dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/view18" />-->
+
+
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+<!--</ScrollView>-->
+

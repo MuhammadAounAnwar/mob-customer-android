@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true">
+
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pizza_order" />
+
+        <TextView
+            android:id="@+id/textView_OA_Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/hamurzfreeversion"
+            android:text="bruschetta squares"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <TextView
+            android:id="@+id/textView_OA_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/price"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OA_Item" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/myriadproregular"
+            android:text="From"
+            android:textColor="@color/Button_BG"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OA_Content" />
+
+        <TextView
+            android:id="@+id/textView_OA_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/myriadproregular"
+            android:text="8.95"
+            android:textColor="@color/Button_BG"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textView48"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OA_Content" />
+
+        <TextView
+            android:id="@+id/textView_OA_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/myriadproregular"
+            android:text="X2"
+            android:textColor="@color/orange_BG"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView_OA_Price"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OA_Content" />
+
+        <TextView
+            android:id="@+id/textView_OA_Tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/myriadproregular"
+            android:text="+$4"
+            android:textColor="@color/orange_BG"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView_OA_Quantity"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OA_Content" />
+
+        <TextView
+            android:id="@+id/textView_OA_Size"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orange_round"
+            android:fontFamily="@font/edittext"
+            android:gravity="center"
+            android:text="Large"
+            android:textColor="@color/Button_Font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+        <ListView
+            android:id="@+id/listView_OrderAgain"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OA_Size" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/edittext"
+            android:text="@string/OA_Delivery"
+            android:textColor="@color/Button_BG"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listView_OrderAgain" />
+
+        <TextView
+            android:id="@+id/textView_OA_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/price"
+            android:text="123 Town NL,ODH "
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_OA_Address" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/edittext"
+            android:text="@string/OA_Time"
+            android:textColor="@color/Button_BG"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+        <TextView
+            android:id="@+id/textView_OA_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/price"
+            android:text="5:15pm"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/edittext"
+            android:text="@string/OA_Date"
+            android:textColor="@color/Button_BG"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+        <TextView
+            android:id="@+id/textView_OA_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/price"
+            android:text="2.10.2019"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/edittext"
+            android:text="@string/OA_ReviewYourOrder"
+            android:textColor="@color/Button_BG"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/black_cornered_edittext"
+            android:ems="10"
+            android:fontFamily="@font/price"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView49" />
+
+        <ImageView
+            android:id="@+id/imageView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView_OA_Date"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/textView_OA_Time"
+            app:layout_constraintTop_toBottomOf="@+id/view12"
+            app:srcCompat="@drawable/vertical_artline" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

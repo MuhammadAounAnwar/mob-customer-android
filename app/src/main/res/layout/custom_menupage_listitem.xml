@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/delete"
+            android:clickable="false"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView41"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/plus"
+            android:clickable="false"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/minus"
+            android:clickable="false"
+            android:layout_weight="1"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/fontColor">
+
+        <ImageView
+            android:id="@+id/imageView_MP_Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout_MP_Counter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/textView_MP_Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/itemname"
+            android:text="bruschetta"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView_MP_Image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_MP_Content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/other"
+            android:text="Caramelised onion with goat cheese on galric base oil"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_MP_Image"
+            app:layout_constraintTop_toBottomOf="@+id/textView_MP_Heading" />
+
+        <TextView
+            android:id="@+id/textView_MP_Price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/black_round"
+            android:fontFamily="@font/itemname"
+            android:gravity="center"
+            android:textColor="@color/Button_Font"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/imageView_MP_Image"
+            app:layout_constraintTop_toBottomOf="@+id/textView_MP_Content"
+            tools:text="from 8.95" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout_MP_Counter"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_MP_Image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView_MP_Plus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView_MP_Minus"
+                app:layout_constraintTop_toBottomOf="@+id/textView_MP_Count"
+                app:srcCompat="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/imageView_MP_Minus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_MP_Plus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_MP_Count"
+                app:srcCompat="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/textView_MP_Count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/edittext"
+                android:text="X1"
+                android:textColor="@color/Button_BG"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
+

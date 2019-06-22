@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A0F0F0F"
+    android:backgroundTint="#7A0F0F0F">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/fontColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView47">
+
+        <Button
+            android:id="@+id/button_ResturantNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/Button_BG"
+            android:fontFamily="@font/button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="1003 88654886"
+            android:textAlignment="center"
+            android:textColor="@color/Button_Font"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<fragment-->
+            <!--android:id="@+id/map_TrackOrder"-->
+            <!--android:name="com.google.android.gms.maps.MapFragment"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/button_ResturantNumber" />-->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ResturantNumber">
+
+            <com.google.android.gms.maps.MapView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </com.google.android.gms.maps.MapView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView35"
+            app:layout_constraintStart_toEndOf="@+id/imageView34"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:srcCompat="@drawable/instagram_black"
+            tools:srcCompat="@drawable/instagram_black" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView35"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:srcCompat="@drawable/twitter_black" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:srcCompat="@drawable/vertical_artline" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView12"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:srcCompat="@drawable/vertical_artline" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/linearLayout_MapLayout"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:orientation="vertical"-->
+            <!--tools:layout_editor_absoluteX="339dp"-->
+            <!--tools:layout_editor_absoluteY="79dp"></LinearLayout>-->
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView_LocationCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/imageView_LocationCross"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_LocationCross"
+        app:srcCompat="@drawable/line_art" />
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fontColor"
+    tools:context="com.locatemybus.myorderbox.Activities.CheckOut">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <include
+            layout="@layout/custom_activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView_CO_TotalPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:fontFamily="@font/hamurzfreeversion"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="$170"
+        android:textColor="@color/Button_Font"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/button_CO_Pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CO_TotalPrice">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/black_cornered_edittext"
+                android:ems="10"
+                android:fontFamily="@font/edittext"
+                android:hint="Add Voucher Code"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_CO_Address" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/edittext"
+                android:text="VOUCHER APPLIED"
+                android:textColor="@color/Button_BG"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+            <TextView
+                android:id="@+id/textView_CO_Voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/edittext"
+                android:text="20"
+                android:textColor="@color/Button_BG"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/edittext"
+                android:text="NOTES FOR THE CHEF"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+            <EditText
+                android:id="@+id/editText_CO_Notes"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/black_cornered_edittext"
+                android:ems="10"
+                android:fontFamily="@font/edittext"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_CO_Notes" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/edittext"
+                android:text="PAYMENT TYPE"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="34dp"
+                android:background="@color/Button_BG"
+                android:fontFamily="@font/edittext"
+                android:text="Apply"
+                android:textColor="@color/Button_Font"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editText11"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_CO_Address" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView65">
+
+                <Button
+                    android:id="@+id/button_CO_Cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/Button_BG"
+                    android:fontFamily="@font/button"
+                    android:text="CASH"
+                    android:textColor="@color/Button_Font"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_CO_Card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlack"
+                    android:fontFamily="@font/button"
+                    android:text="CARD"
+                    android:textColor="@color/Button_Font"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout_CardFields"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <View
+                    android:id="@+id/view16"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.stripe.android.view.CardInputWidget
+                    android:id="@+id/card_input_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+                <View
+                    android:id="@+id/view17"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimaryDark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_input_widget" />
+
+                <EditText
+                    android:id="@+id/editText14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:fontFamily="@font/edittext"
+                    android:hint="CARD NO."
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+                <EditText
+                    android:id="@+id/editText15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:fontFamily="@font/edittext"
+                    android:hint="YOUR NAME ON CARD"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText14" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText15">
+
+                    <Spinner
+                        android:id="@+id/spinner_Month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_item_border"
+                        android:paddingBottom="5dp"
+                        android:spinnerMode="dropdown" />
+
+                    <Spinner
+                        android:id="@+id/spinner_Year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_item_border"
+                        android:paddingBottom="5dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/myriadproregular"
+                    android:hint="CVV NO."
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout_CO_Address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/editText_CO_PostalCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@drawable/black_cornered_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/edittext"
+                    android:hint="Postal Code"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_CO_City" />
+
+                <EditText
+                    android:id="@+id/editText_CO_City"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@drawable/black_cornered_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/edittext"
+                    android:hint="City"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_CO_Street" />
+
+                <EditText
+                    android:id="@+id/editText_CO_Street"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@drawable/black_cornered_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/edittext"
+                    android:hint="Street/Town"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_CO_House" />
+
+                <EditText
+                    android:id="@+id/editText_CO_House"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@drawable/black_cornered_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/edittext"
+                    android:hint="House No."
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_CO_Pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBlack"
+        android:fontFamily="@font/hamurzfreeversion"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="confirm order"
+        android:textColor="@color/Button_Font"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</android.support.constraint.ConstraintLayout>

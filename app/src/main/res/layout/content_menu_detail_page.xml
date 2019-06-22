@@ -1,0 +1,216 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true"
+    tools:context="com.locatemybus.myorderbox.Activities.MenuDetailPage">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView_MD_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/placeholder2x" />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="84dp"
+                android:background="@drawable/badge_bg_with_shadow"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/price"
+                    android:text="From"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/price"
+                    android:text="21.9"
+                    android:textColor="@color/colorBlack" />
+
+
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView_MDP_Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/hamurzfreeversion"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constra"
+            tools:text="bruschetta squares" />
+
+        <TextView
+            android:id="@+id/textView_MDP_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/edittext"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_MDP_Heading"
+            tools:text="Caramelised Onion with Goat Cheese" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout_Count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lvExp_MO_Options">
+
+            <ImageView
+                android:id="@+id/imageView_MD_Inc"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_MD_Count"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/textView_MD_Count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/edittext"
+                android:padding="0dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.75"
+                tools:text="X1" />
+
+            <ImageView
+                android:id="@+id/imageView_MD_Dec"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView_MD_Count"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/minus" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ExpandableListView
+            android:id="@+id/lvExp_MO_Options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:childDivider="@color/lightGrayColor"
+            android:divider="@color/colorBlack"
+            android:dividerHeight="1dp"
+            android:headerDividersEnabled="true"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_MDP_Content" />
+
+
+        <ExpandableListView
+            android:id="@+id/lvExp_PizzaSauce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:childDivider="@color/lightGrayColor"
+            android:divider="@color/colorBlack"
+            android:dividerHeight="1dp"
+            android:headerDividersEnabled="true"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view30" />
+
+        <ExpandableListView
+            android:id="@+id/lvExp_PizzaCrust"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:childDivider="@color/lightGrayColor"
+            android:divider="@color/colorBlack"
+            android:dividerHeight="1dp"
+            android:headerDividersEnabled="true"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lvExp_PizzaSauce" />
+
+        <View
+            android:id="@+id/view30"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBlack"
+            android:backgroundTint="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_Count" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+

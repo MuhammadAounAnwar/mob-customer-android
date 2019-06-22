@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/homeGroup" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:title="@string/menu_Home" />
+
+    </group>
+    <group android:id="@+id/loginGroup" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Login"
+            android:title="@string/menu_Login" />
+    </group>
+    <group android:id="@+id/myOrderGroup" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_MyOrder"
+            android:title="@string/menu_MyOrder" />
+    </group>
+    <group android:id="@+id/NotificationGroup" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Notification"
+            android:title="@string/menu_Notification" />
+    </group>
+    <group android:id="@+id/NPGroup" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_NotificationPreferences"
+            android:title="@string/menu_NotificationPreferences" />
+    </group>
+    <group android:id="@+id/helpGroup" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Help"
+            android:title="@string/menu_Help" />
+    </group>
+
+    <item
+        android:id="@+id/nav_version"
+        android:title="@string/menu_Version" />
+    <item
+        android:id="@+id/nav_send"
+        android:title="@string/menu_Powered" />
+
+</menu>
+

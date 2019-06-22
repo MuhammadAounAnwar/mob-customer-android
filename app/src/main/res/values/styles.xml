@@ -1,0 +1,53 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/colorBlack</item>
+
+    </style>
+
+    <style name="NavigationView" parent="Base.Theme.AppCompat">
+        <item name="android:listDivider">@color/fontColor</item>
+        <item name="android:navigationBarColor">@color/colorBlack</item>
+    </style>
+
+    <style name="SwitchCompatStyle">
+        <item name="thumbTint">@color/switch_color</item>
+    </style>
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/Button_BG</item>
+        <item name="colorSwitchThumbNormal">@color/colorBlack</item>
+    </style>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        tools:layout_editor_absoluteX="351dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Button_BG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_CD_Heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/pangrambold"
+            android:text="TWO TASTY DEALS FOR $14.99"
+            android:textAlignment="center"
+            android:textColor="@color/Button_Font"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_CD_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/myriadproregular"
+            android:text="2 MEDIUM PIZZAS, 1 PASTA, 1 Sumptous, 2 regular Drinks, 3 Fries"
+            android:textAlignment="center"
+            android:textColor="@color/Button_Font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_CD_Heading" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listView_CD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+</android.support.constraint.ConstraintLayout>
